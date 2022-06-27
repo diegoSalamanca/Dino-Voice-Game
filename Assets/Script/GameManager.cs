@@ -1,12 +1,7 @@
-﻿//Codigo Desarrollado por Diego Salamanca
+﻿//Developed By: Diego Salamanca
 //Email: Diegocolmayor@gmail.com
-//Tel. 301 733 7051
+//Tel. +57 3508232690
 //Bogotá Colombia.
-
-/*  Funcionamiento
-Clase que administra el flujo del juego y permite un punto de acceso 
-mediante el patrón de diseño Singleton. 
- */
 
 using UnityEngine;
 
@@ -49,7 +44,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         game = false;
-        startScreen.ShowScreen("Dino Voice", " Say \"Play Game\"");
+        startScreen.ShowScreen("Dino Voice", "Say \"Play Game\" - Di \"Jugar\"");
     }
 
     public void GameStart()
@@ -74,7 +69,7 @@ public class GameManager : MonoBehaviour
             soundManager.StopAllSound();
             soundManager.PlayShoot(2);
             game = false;
-            startScreen.ShowScreen("You Lose", "Say \"Try Again\"");
+            startScreen.ShowScreen("You Lose", "Say \"Try Again\" - Di \"Volver a Jugar\"");
         }
        
     }

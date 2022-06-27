@@ -1,14 +1,7 @@
-﻿//Codigo Desarrollado por Diego Salamanca
+﻿//Developed By: Diego Salamanca
 //Email: Diegocolmayor@gmail.com
-//Tel. 301 733 7051
+//Tel. +57 3508232690
 //Bogotá Colombia.
-
-/*  Funcionamiento
-Esta clase reconoce la voz y si coincide con la palabra esperada con un key
-segun una estructura de datos tipo diccionario ejecuta una acción
-almacenada en el value. Utiliza un patron de diseño observador para suscribirse 
-a los eventos de OnPhraseRecognized. 
- */
 
 using System;
 using System.Linq;
@@ -39,13 +32,16 @@ public class SpeechManager : MonoBehaviour
         playerController = gameManager.playerController;
        
 
-        actions.Add("please jump", Up);
-             
-        actions.Add("please down", Down);
-        
+        actions.Add("jump", Up);
+        actions.Add("saltar", Up);  
+        actions.Add("arriba", Up);             
+        actions.Add("down", Down);
+        actions.Add("agacharse", Down); 
+        actions.Add("abajo", Down); 
         actions.Add("play game", Go);
-
+        actions.Add("jugar", Go);
         actions.Add("try again", Go);
+        actions.Add("volver a jugar", Go);
 
 
         keywordRecognizer = new KeywordRecognizer(actions.Keys.ToArray());

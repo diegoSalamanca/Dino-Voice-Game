@@ -1,5 +1,8 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿//Developed By: Diego Salamanca
+//Email: Diegocolmayor@gmail.com
+//Tel. +57 3508232690
+//Bogotá Colombia.
+
 using UnityEngine;
 
 public class GroundComponent : MonoBehaviour

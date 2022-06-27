@@ -1,11 +1,7 @@
-﻿//Codigo Desarrollado por Diego Salamanca
+﻿//Developed By: Diego Salamanca
 //Email: Diegocolmayor@gmail.com
-//Tel. 301 733 7051
+//Tel. +57 3508232690
 //Bogotá Colombia.
-
-/*  Funcionamiento
-Actualiza un texto en pantalla que muestra las coincidencias de voz del speech 
- */
 
 using UnityEngine;
 
